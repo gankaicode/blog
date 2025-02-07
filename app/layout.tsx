@@ -7,10 +7,10 @@ import { Analytics, AnalyticsConfig } from 'pliny/analytics'
 import { SearchProvider, SearchConfig } from 'pliny/search'
 import Header from '@/components/Header'
 import SectionContainer from '@/components/SectionContainer'
-import Footer from '@/components/Footer'
 import siteMetadata from '@/data/siteMetadata'
 import { ThemeProviders } from './theme-providers'
 import { Metadata } from 'next'
+import SiteFooter from '@/components/SiteFooter'
 
 const space_grotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -75,21 +75,27 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <link
         rel="icon"
         type="image/png"
-        sizes="32x32"
-        href={`${basePath}/static/favicons/favicon-32x32.png`}
+        sizes="48x48"
+        href={`${basePath}/static/favicons/favicon-180X80.png`}
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href={`${basePath}/static/favicons/favicon-16x16.png`}
+        href={`${basePath}/static/favicons/favicon-100X45.png`}
       />
       <link rel="manifest" href={`${basePath}/static/favicons/site.webmanifest`} />
       <link
         rel="mask-icon"
-        href={`${basePath}/static/favicons/safari-pinned-tab.svg`}
-        color="#5bbad5"
+        href={`${basePath}/static/favicons/safari-pinned-tab.png`}
+        color="#FF6B6B"
       />
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2108246014001009"
+        crossOrigin="anonymous"
+      ></script>
+      <meta name="google-adsense-account" content="ca-pub-2108246014001009"></meta>
       <meta name="google-site-verification" content="QBYZptmNADcvd2h8ZZVSZIJUlv5RnI8yYmHtEld1mKk" />
       <meta name="msapplication-TileColor" content="#000000" />
       <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
@@ -101,9 +107,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <SectionContainer>
             <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
               <Header />
-              <main className="mb-auto">{children}</main>
+              <main className="mx-auto max-w-7xl px-4 sm:px-6 xl:px-0">{children}</main>
             </SearchProvider>
-            <Footer />
+            {/* <Footer /> */}
+            <SiteFooter />
           </SectionContainer>
         </ThemeProviders>
       </body>

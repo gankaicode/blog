@@ -1,4 +1,8 @@
-![tailwind-nextjs-banner](/public/static/images/blog-header.png)
+![geekskai-blog](/public/static/images/geekskai-blog.png)
+![geekskai-blog-detail-mobile](/public/static/images/geekskai-blog-detail-mobile.png)
+![geekskai-blog-list](/public/static/images/geekskai-blog-list.png)
+![geekskai-readme-blog](/public/static/images/readme-blog.png)
+![geekskai-blog-performance](/public/static/images/performance.png)
 
 [https://www.geekskai.com/](https://www.geekskai.com/)
 

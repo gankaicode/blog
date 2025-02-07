@@ -2,22 +2,22 @@
 const siteMetadata = {
   title: 'geekskai',
   author: 'Geeks Kai',
-  headerTitle: 'geeks kai Blog',
+  headerTitle: 'geekskai',
   description:
-    'A blog by Geeks Kai focusing on JavaScript, web development, and programming insights.',
+    'A digital hub for web dev tools, tech insights, and sustainable living. Bridging Chinese and global tech perspectives through practical guides and thoughtful analysis.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://geekskai.com',
   siteRepo: 'https://github.com/geekskai/blog',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
-  socialBanner: `${process.env.BASE_PATH || ''}/static/images/blog-header.png`,
+  socialBanner: `${process.env.BASE_PATH || ''}/static/images/geekskai-blog.png`,
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'geeks.kai@gmail.com',
   github: 'https://github.com/geekskai',
   x: 'https://twitter.com/GeeksKai',
   // twitter: 'https://twitter.com/Twitter',
   facebook: 'https://www.facebook.com/geekskai',
-  youtube: 'https://www.youtube.com/@@kaigan-is6ym',
+  youtube: 'https://www.youtube.com/@kaigan-is6ym',
   linkedin: 'https://www.linkedin.com/in/geekskai',
   threads: 'https://www.threads.net',
   instagram: 'https://www.instagram.com',
@@ -44,9 +44,9 @@ const siteMetadata = {
     // posthogAnalytics: {
     //   posthogProjectApiKey: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
     // },
-    googleAnalytics: {
-      googleAnalyticsId: process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID, // e.g. G-XXXXXXX
-    },
+    // googleAnalytics: {
+    //   googleAnalyticsId: process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID, // e.g. G-XXXXXXX
+    // },
   },
   // newsletter: {
   //   // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus, beehive
